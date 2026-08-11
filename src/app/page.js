@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import OrderNow from "@/components/Ordernow";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main>
         <Hero />
+        <OrderNow />
       </main>
     </div>
   );

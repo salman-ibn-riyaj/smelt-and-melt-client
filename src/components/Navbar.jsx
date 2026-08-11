@@ -21,6 +21,7 @@ import {
 } from "react-icons/fi";
 import { LuUtensilsCrossed } from "react-icons/lu";
 import { ThemeSwitch } from "./ThemeSwitch";
+import Image from "next/image";
 
 export default function AppNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,12 +53,12 @@ export default function AppNavbar() {
           </button>
 
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-amber-500 text-white shadow-md shadow-amber-500/30 transition-transform duration-300 group-hover:scale-105 dark:bg-amber-600">
-              <LuUtensilsCrossed className="h-5 w-5" />
+            <div>
+              <Image width={50} height={50} src="/logo_momos.png" alt="Logo" />
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-zinc-50">
-                SMELT <span className="text-amber-500 dark:text-amber-400">&</span> MELT
+                STEAM <span className="text-amber-500 dark:text-amber-400">&</span> MELT
               </span>
               <span className="text-[10px] font-medium tracking-widest text-slate-500 dark:text-zinc-400 -mt-1 uppercase">
                 Authentic Bites
@@ -83,7 +84,7 @@ export default function AppNavbar() {
         <div className="flex items-center gap-3">
 
           {/* Theme Switch */}
-          <ThemeSwitch />
+          {/* <ThemeSwitch /> */}
 
           {/* Conditional Auth State */}
           {isLoggedIn ? (

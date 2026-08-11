@@ -12,6 +12,7 @@ import {
   FiMail,
   FiHeart,
 } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -51,7 +52,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-extrabold tracking-tight text-slate-900 dark:text-zinc-50">
-                  SMELT <span className="text-amber-500 dark:text-amber-400">&</span> MELT
+                  STEAM <span className="text-amber-500 dark:text-amber-400">&</span> MELT
                 </span>
                 <span className="text-[10px] font-medium tracking-widest text-slate-500 dark:text-zinc-400 -mt-1 uppercase">
                   Authentic Bites
@@ -67,11 +68,12 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-slate-600 dark:text-zinc-400">
               <li className="flex items-center gap-2">
                 <FiMapPin className="h-4 w-4 text-amber-500 shrink-0" />
-                <span>123 Culinary Street, Foodville, FC 12345</span>
+                <span>Gulshan, Notunbazar, Wazuddin Road.</span>
               </li>
               <li className="flex items-center gap-2">
                 <FiPhone className="h-4 w-4 text-amber-500 shrink-0" />
-                <span>+1 (555) 019-2834</span>
+                <FaWhatsapp className="h-4 w-4 text-amber-500 shrink-0" />
+                <span>+880 1628-007097</span>
               </li>
               <li className="flex items-center gap-2">
                 <FiMail className="h-4 w-4 text-amber-500 shrink-0" />
@@ -82,7 +84,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61591520271452&rdid=FKh2MbKLzpxhpyp1&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JXtGXw8UH%2F#"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 shadow-sm transition-all hover:bg-amber-500 hover:text-white dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-amber-500"
@@ -91,7 +93,7 @@ export default function Footer() {
                 <FiFacebook className="h-4 w-4" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/nanhatanzim?igsh=dzF0ZDBhNG4wcHpq"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 shadow-sm transition-all hover:bg-amber-500 hover:text-white dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-amber-500"
@@ -99,15 +101,7 @@ export default function Footer() {
               >
                 <FiInstagram className="h-4 w-4" />
               </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 shadow-sm transition-all hover:bg-amber-500 hover:text-white dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-amber-500"
-                aria-label="Twitter"
-              >
-                <FiTwitter className="h-4 w-4" />
-              </a>
+              
             </div>
           </div>
 
@@ -173,7 +167,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-slate-200/80 pt-6 text-center text-xs text-slate-500 dark:border-zinc-800/80 dark:text-zinc-500">
           <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p>© {currentYear} SMELT & MELT. All rights reserved.</p>
+            <p>© {currentYear} STEAM & MELT. All rights reserved.</p>
             <p className="flex items-center gap-1">
               Made with <FiHeart className="h-3.5 w-3.5 fill-amber-500 text-amber-500" /> for momo lovers.
             </p>
