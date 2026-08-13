@@ -150,22 +150,24 @@ export default function AppNavbar() {
             </Dropdown>
           ) : (
             <div className="flex items-center gap-2">
-              <Button
-                as={Link}
-                href="/sign-in"
-                variant="light"
+              <Button variant="secondary"><Link
+
+                href="/signin"
+
                 size="sm"
                 className="hidden sm:inline-flex font-medium text-slate-700 hover:text-amber-600 dark:text-zinc-300 dark:hover:text-amber-400"
               >
                 Sign In
-              </Button>
-              <Button
-                as={Link}
-                href="/sign-up"
-                size="sm"
-                className="hidden sm:inline-flex rounded-xl bg-amber-500 font-semibold text-white shadow-md shadow-amber-500/20 transition-all hover:bg-amber-600 active:scale-95 dark:bg-amber-600 dark:hover:bg-amber-500"
-              >
-                Sign Up
+              </Link></Button>
+              <Button variant="primary">
+                <Link
+
+                  href="/signup"
+                  size="sm"
+
+                >
+                  Sign Up
+                </Link>
               </Button>
             </div>
           )}
